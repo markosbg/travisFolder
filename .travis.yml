@@ -1,5 +1,3 @@
 language: python
 before_script:
-  - echo 'hello W' >hello.txt
-after_script:
   - less README.md
