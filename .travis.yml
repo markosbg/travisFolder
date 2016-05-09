@@ -1,3 +1,8 @@
+sudo: required
 language: python
 before_script:
-  - less README.md
+  - docker login images.sbgenomics.com
+  - marko328
+  - sifra
+services:
+  - docker
