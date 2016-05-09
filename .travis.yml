@@ -1,8 +1,10 @@
 sudo: required
 language: python
 before_script:
+  - travis env set DOCKER_EMAIL marko.vukobrat@sbgenomics.com
+  - travis env set DOCKER_USERNAME markosbg
+  - travis env set DOCKER_PASSWORD Kopaonik121
   - docker login images.sbgenomics.com
-  - marko328
-  - sifra
+
 services:
   - docker
