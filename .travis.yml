@@ -1,1 +1,4 @@
 language: python
+before_script:
+  - echo 'hello W' >hello.txt
+  - less hello.txt
