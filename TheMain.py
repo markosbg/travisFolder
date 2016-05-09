@@ -3,7 +3,7 @@ from datetime import datetime
 def main():
     sttime = datetime.now().strftime('%Y%m%d_%H:%M:%S - ')
     with open("README.md", "a") as myfile:
-        myfile.write(sttime+'\n')
+        myfile.write('\n'+sttime)
 
 
 if __name__ == '__main__':
