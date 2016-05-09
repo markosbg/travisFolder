@@ -6,6 +6,5 @@ before_script:
 script:
   - python TheMain.py
   - less README.md
-  -
 services:
   - docker
