@@ -2,7 +2,9 @@ sudo: required
 language: python
 before_script:
   - docker login -e="$DOCKER_EMAIL" -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD" images.sbgenomics.com
-script: python TheMain.py
+script:
+  - python TheMain.py
+  - less README.md
 
 services:
   - docker
